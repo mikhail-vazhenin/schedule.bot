@@ -1,0 +1,30 @@
+﻿<html>
+<head>
+    <title>Burevestnik bus bot</title>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&load=route,router.Route" type="text/javascript"></script>
+    <script type="text/javascript">
+        ymaps.ready(function () {
+
+            //    var route = ymaps.route(['Метро Сокольники', 'БЦ Буревестник'], {
+            //        avoidTrafficJams: true
+            //    });
+
+            //    var time = route.then(function (route) {
+            //        console.log(route.getJamsTime());
+            //    });
+
+            //});
+            ymaps.route([[55.789592, 37.658979], [55.789643, 37.679046]], {
+                avoidTrafficJams: true
+            }).then(function (route) {
+                console.log(route.getJamsTime());
+            }, function (error) {
+                console.log(error);
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="YMapsID" style="width: 450px; height: 350px;" />
+</body>
+</html>
