@@ -1,5 +1,5 @@
 ﻿{
-  "ToWork": [
+  "ToMetro": [
     {"time":"7:50", "days":"*"},
     {"time":"8:05", "days":"*"},
     {"time":"8:20", "days":"*"},
@@ -54,7 +54,7 @@
     {"time":"20:00","days":"*"}
   ],
 
-  "ToMetro": [
+  "ToWork": [
     {"time":"7:45", "days":"*"},
     {"time":"8:00", "days":"*"},
     {"time":"8:15", "days":"*"},
